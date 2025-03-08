@@ -35,12 +35,12 @@ public class CalificacionController {
     }
 
     @GetMapping("/usuarios/{usuarioId}")
-    public ResponseEntity<List<Calificacion>> listarCalificacionPorUsuarioId(@PathVariable String usuarioId) {
+    public ResponseEntity<List<Calificacion>> listarCalificacionPorUsuarioId(@PathVariable int usuarioId) {
         return ResponseEntity.ok().body(calificacionService.getCalificacionesByUsuarioId(usuarioId));
     }
 
     @GetMapping("/hoteles/{hotelId}")
-    public ResponseEntity<List<Calificacion>> listarCalificacionPorHotelId(@PathVariable String hotelId) {
+    public ResponseEntity<List<Calificacion>> listarCalificacionPorHotelId(@PathVariable int hotelId) {
         return ResponseEntity.ok().body(calificacionService.getCalificacionesByHotelId(hotelId));
     }
 }

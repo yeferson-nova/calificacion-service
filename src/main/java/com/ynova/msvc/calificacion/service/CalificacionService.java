@@ -12,7 +12,7 @@ public interface CalificacionService {
 
     Calificacion getCalificacionById(String id);
 
-    List<Calificacion> getCalificacionesByUsuarioId(String usuarioId);
+    List<Calificacion> getCalificacionesByUsuarioId(int usuarioId);
 
-    List<Calificacion> getCalificacionesByHotelId(String hotelId);
+    List<Calificacion> getCalificacionesByHotelId(int hotelId);
 }

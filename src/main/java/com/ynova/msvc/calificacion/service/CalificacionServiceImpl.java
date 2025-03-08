@@ -34,12 +34,12 @@ public class CalificacionServiceImpl implements CalificacionService {
     }
 
     @Override
-    public List<Calificacion> getCalificacionesByUsuarioId(String usuarioId) {
+    public List<Calificacion> getCalificacionesByUsuarioId(int usuarioId) {
         return calificacionRepository.findByUsuarioId(usuarioId);
     }
 
     @Override
-    public List<Calificacion> getCalificacionesByHotelId(String hotelId) {
+    public List<Calificacion> getCalificacionesByHotelId(int hotelId) {
         return calificacionRepository.findByHotelId(hotelId);
     }
 
