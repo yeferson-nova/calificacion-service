@@ -1,4 +1,4 @@
-package com.ynova.calificacion_service;
+package com.ynova.msvc.calificacion;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
