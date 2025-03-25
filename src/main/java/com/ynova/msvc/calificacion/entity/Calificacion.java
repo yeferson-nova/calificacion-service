@@ -1,5 +1,7 @@
 package com.ynova.msvc.calificacion.entity;
 
+import java.time.ZonedDateTime;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -20,6 +22,7 @@ public class Calificacion {
     private String id;
     private Long usuarioId;
     private Long hotelId;
+    private ZonedDateTime fecha;
     @JsonProperty("calificacion")
     @Field("calificacion")
     private int puntuacion;
